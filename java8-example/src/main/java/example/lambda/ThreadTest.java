@@ -1,8 +1,11 @@
 package example.lambda;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
+
+/*例1、用lambda表达式实现Runnable*/
 public class ThreadTest {
 
     public static void main(String[] args) {
@@ -16,7 +19,8 @@ public class ThreadTest {
             }
         }, "name : old thread").start();
 
-        /*lambda*/
+
+        /*使用lambda表达式替换匿名类，实现Runnable接口。用 () -> {} 代码块替代了整个匿名类*/
         new java.lang.Thread(() -> {
             System.out.println(java.lang.Thread.currentThread().getName());
         }, "name : new thread").start();

@@ -1,8 +1,10 @@
-package example.Collections;
+package example.collections;
 
 import java.util.Arrays;
 import java.util.List;
 
+
+/*例2、 使用lambda表达式对列表进行 迭代 */
 public class CollectionsTest {
 
 
@@ -19,7 +21,6 @@ public class CollectionsTest {
 
         /*方法引用（Method references）*/
         list.forEach(System.out:: println);
-
 
     }
 }
