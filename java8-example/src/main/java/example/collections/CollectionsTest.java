@@ -7,7 +7,6 @@ import java.util.List;
 /*例2、 使用lambda表达式对列表进行 迭代 */
 public class CollectionsTest {
 
-
     public static void main(String[] args) {
         List<Character> list = Arrays.asList('a', 'c', 'b', 'f', 'e');
 
