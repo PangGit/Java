@@ -9,10 +9,9 @@
     <version>1.0</version>
 
     <modules>
-        <module>java-example-base</module>
-        <module>java8-example</module>
-        <module>java9-example</module>
-        <module>java10-example</module>
+        <module>base</module>
+        <module>java8</module>
+        <module>java11</module>
         
     </modules>
 

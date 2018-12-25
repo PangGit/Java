@@ -5,27 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.java.example</groupId>
-    <artifactId>java8-example</artifactId>
-    <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <artifactId>base</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
 
-    <name>java8-example</name>
-    <description>java8 new character</description>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.java.example</groupId>
-            <artifactId>java-example-base</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.7</version>
-        </dependency>
-
-    </dependencies> 
+    <name>base</name>
+    <description>java example base</description>
 
     <build>
         <plugins>

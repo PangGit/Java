@@ -13,6 +13,7 @@ public class ThreadTest {
 
         /*传统方式*/
         new java.lang.Thread(new Runnable() {
+            @Override
             public void run() {
                 System.out.println(java.lang.Thread.currentThread().getName());
             }
