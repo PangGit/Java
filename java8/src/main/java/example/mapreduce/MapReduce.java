@@ -31,7 +31,7 @@ public class MapReduce {
 
         // 新方法：
         List<Integer> costBeforeTax2 = Arrays.asList(100, 200, 300, 400, 500);
-        double bill = costBeforeTax2.stream().map((cost) -> cost + .12 * cost).reduce((sum, cost) -> sum + cost).get();
+        double bill = costBeforeTax2.stream().map((cost) -> cost + .12 * cost).reduce(Double::sum).get();
         System.out.println("Total : " + bill);
     }
 

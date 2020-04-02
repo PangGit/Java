@@ -20,13 +20,13 @@ Predicate接口非常适用于做过滤。
 public class PredicateTest {
 
     public static void main(String[] args) {
-        List languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp");
+        List<String> languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp");
 
         System.out.println("\nLanguages which starts with J :");
-        filter(languages, (str) -> str.toString().startsWith("J"));
+        filter(languages, (str) -> str.startsWith("J"));
 
         System.out.println("\nLanguages which ends with a ");
-        filter(languages, (str) -> str.toString().endsWith("a"));
+        filter(languages, (str) -> str.endsWith("a"));
 
         System.out.println("\nPrint all languages :");
         filter(languages, (str) -> true);
@@ -35,7 +35,7 @@ public class PredicateTest {
         filter(languages, (str) -> false);
 
         System.out.println("\nPrint language whose length greater than 4:");
-        filter(languages, (str) -> str.toString().length() > 4);
+        filter(languages, (str) -> str.length() > 4);
 
 
     }
@@ -55,9 +55,9 @@ public class PredicateTest {
         Stream API的过滤方法也接受一个Predicate，这意味着可以将我们定制的 filter() 方法替换成写在里面的内联代码
     */
     /*2*/
-    public static void filter(List names, java.util.function.Predicate condition) {
-        names.stream().filter((name) -> (condition.test(name))).forEach((name) -> {
-            System.out.println(name + " ");
+    public static void filter(List<String> names, java.util.function.Predicate<String> condition) {
+        names.stream().filter(condition).forEach((name) -> {
+            System.out.print(name + " ");
         });
     }
 

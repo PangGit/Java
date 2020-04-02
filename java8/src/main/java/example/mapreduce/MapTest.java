@@ -22,7 +22,7 @@ public class MapTest {
         // 不使用lambda表达式为每个订单加上12%的税
         List<Integer> costBeforeTax = Arrays.asList(100, 200, 300, 400, 500);
         for (Integer cost : costBeforeTax) {
-            double price = cost + .12 * Integer.valueOf(cost);
+            double price = cost + .12 * cost;
             System.out.println(price);
         }
 
